@@ -39,3 +39,20 @@ box-sizing: border-box;
     grid-template-rows:1fr 1fr ;
     gap: 0.5rem;
 }
+.centerem .result{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+    gap: 0.5rem;
+    width: 70%;
+}
+.centerem .result img{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+.centerem .result h5{
+    width: 50%;
+}
