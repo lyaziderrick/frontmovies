@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import "./search.css"
 
-const baseURL = "https://reqres.in/api/unknown";
+const baseURL = "https://rugged-yosemite-26165.herokuapp.com/search/";
 
 function Search() {
   const [post, setPost] = React.useState(null);
@@ -26,7 +26,7 @@ function Search() {
     </div>
     <div class="result">  
       <div>    
-        <h1>{post.data[5].pantone_value}</h1>
+        <h1>{post.page[0]}</h1>
       </div>
     
     </div>
