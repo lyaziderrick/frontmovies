@@ -26,8 +26,9 @@ function Search() {
     </div>
     <div class="result">  
       <div>    
-      <h1>{post.data[5].pantone_value}</h1>
+        <h1>{post.data[5].pantone_value}</h1>
       </div>
+    
     </div>
    </div>
   );
