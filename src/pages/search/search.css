@@ -1,0 +1,41 @@
+.centerem h1{
+    text-align: center;
+}
+.centerem h5{
+    text-align: center;
+}
+.centerem .imageone{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 0.5rem;
+    margin: auto;
+}
+.centerem .imageone button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+}
+.centerem .imageone input{
+padding: 15px 32px; 
+width:100%;
+box-sizing: border-box;  
+
+}
+.centerem .resulta{
+ display: grid;
+ grid-template-rows: 1fr; 
+}
+.centerem .resulta img{
+    margin: auto;
+}
+.centerem{
+    display: grid;
+    grid-template-rows:1fr 1fr ;
+    gap: 0.5rem;
+}
