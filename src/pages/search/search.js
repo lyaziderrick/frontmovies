@@ -26,7 +26,7 @@ function Search() {
     </div>
     <div class="result">  
       <div>    
-        <h1>{post.page}</h1>
+        <h1>{post.page[5]}</h1>
       </div>
     </div>
    </div>
