@@ -51,8 +51,11 @@ box-sizing: border-box;
 .centerem .result img{
     width: 30%;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
 }
+
 .centerem .result h5{
     width: 50%;
 }

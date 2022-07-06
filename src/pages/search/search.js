@@ -7,9 +7,11 @@ import "./search.css"
 function Search() {
 
   const[value, setValue] = useState(""); 
+  const[vam] = useState(""); 
   const [post, setPost] = React.useState(null);
   
   const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"+&apikey=583d761d";
+  const url="https://show2embed.web.app/watch/";
   const home = () => {  
     axios.get(baseURL).then((response) => {
         setPost(response.data);
@@ -32,8 +34,9 @@ function Search() {
     </div>
     <div><h1>{value}</h1></div>
     <div class="result">  
-      <div>  
-       <a href="https://show2embed.web.app/watch/1412"><img src ={post.Poster} alt="N/A"/></a> 
+      <div class="see">  
+        
+       <a href={url + post.imdbID} target="_blank"><img src ={post.Poster} alt="N/A"/></a> 
         </div>
         <div>
         <h5>{post.Plot}</h5>
