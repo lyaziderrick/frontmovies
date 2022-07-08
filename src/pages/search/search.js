@@ -22,7 +22,7 @@ function Search() {
   React.useEffect(() => {
    home()
   }, []);
-  if (!post) return null;
+  if (!post) return "ten";
 
   return (
     <div className="centerem">
