@@ -12,8 +12,8 @@ function Search() {
   const [post, setPost] = React.useState(null);
   const [showText, setShowText] = useState(false);
   
-  const baseURL = "https://fmovies.co/film/best-years-gone-1630853679?play=1/";
-  const url="https://fmovies.co/film/best-years-gone-1630853679?play=1/";
+  const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"+&apikey=583d761d";
+  const url="https://goplayer.top/watch/API/";
   const home = () => {  
     axios.get(baseURL).then((response) => {
         setPost(response.data);
@@ -49,11 +49,10 @@ function Search() {
         <h6>Genre:{post.Genre} </h6>
         <h6>Country:{post.Country}</h6>
         <h6>Runtime:{post.Runtime} </h6>
-       </div>
-      
+       </div>  
     </div>
     <div class="displayten">
-    {showText &&  <iframe id="ve-iframe" src={url} 
+    {showText &&  <iframe id="ve-iframe" src={url + post.imdbID} 
       scrolling="no"  allowfullscreen="allowfullscreen" frameborder="0"></iframe>}
        </div>
    </div>
