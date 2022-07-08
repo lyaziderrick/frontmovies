@@ -12,8 +12,8 @@ function Search() {
   const [post, setPost] = React.useState(null);
   const [showText, setShowText] = useState(false);
   
-  const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"+&apikey=583d761d";
-  const url="https://fmovies.co/film/best-years-gone-1630853679?play=1/";
+  const baseURL = " "+value.replace(/ /g,"+")+"+&apikey=583d761d";
+  const url="";
   const home = () => {  
     axios.get(baseURL).then((response) => {
         setPost(response.data);
