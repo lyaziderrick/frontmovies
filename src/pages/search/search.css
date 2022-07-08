@@ -60,3 +60,17 @@ box-sizing: border-box;
     width: 50%;
     font-size: small;
 }
+.displayten{
+    display: block;
+    margin: auto;
+    height: 300px;
+    width: 50%;
+
+}
+.displayten iframe{
+    border: 0px none; 
+    margin-left: -185px;
+     height: 659px;
+      margin-top: 500px; 
+      width: 926px;   
+}

@@ -4,14 +4,16 @@ import "./search.css"
 
 
 
+
+
 function Search() {
 
   const[value, setValue] = useState(""); 
-  const[vam] = useState(""); 
   const [post, setPost] = React.useState(null);
+  const [showText, setShowText] = useState(false);
   
   const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"+&apikey=583d761d";
-  const url="https://show2embed.web.app/watch/";
+  const url="https://fmovies.co/film/best-years-gone-1630853679?play=1/";
   const home = () => {  
     axios.get(baseURL).then((response) => {
         setPost(response.data);
@@ -30,13 +32,14 @@ function Search() {
     </div>  
     <div className="imageone">
     <input value={value} onChange={(e) => {setValue(e.target.value)}} />
-    <button type="submit" className="btn" onClick={home}>Search</button> 
+    <button type="submit" className="btn" onClick={home}>Search</button>  
     </div>
     <div><h1>{value}</h1></div>
     <div class="result">  
       <div class="see">  
         
-       <a href={url + post.imdbID} target="_blank"><img src ={post.Poster} alt="N/A"/></a> 
+     <img src ={post.Poster} alt="N/A" onClick={() => setShowText(!showText)} />
+     
         </div>
         <div>
         <h5>{post.Plot}</h5>
@@ -47,11 +50,14 @@ function Search() {
         <h6>Country:{post.Country}</h6>
         <h6>Runtime:{post.Runtime} </h6>
        </div>
-       <div class="displayten">
-
-       </div>
+      
     </div>
+    <div class="displayten">
+    {showText &&  <iframe id="ve-iframe" src={url} 
+      scrolling="no"  allowfullscreen="allowfullscreen" frameborder="0"></iframe>}
+       </div>
    </div>
+   
   );
 }
 export default Search
