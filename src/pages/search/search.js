@@ -22,7 +22,7 @@ function Search() {
   React.useEffect(() => {
    home()
   }, []);
-  if (!post) return "ten";
+ 
 
   return (
     <div className="centerem">
@@ -30,6 +30,7 @@ function Search() {
     <h1>LdexMovies</h1> 
     <h5>Find Movies, TV shows and more</h5>  
     </div>  
+     if (!post) return null;
     <div className="imageone">
     <input value={value} onChange={(e) => {setValue(e.target.value)}} />
     <button type="submit" className="btn" onClick={home}>Search</button>  
