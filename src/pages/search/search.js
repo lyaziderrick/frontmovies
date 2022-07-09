@@ -9,10 +9,11 @@ import "./search.css"
 function Search() {
 
   const[value, setValue] = useState(""); 
+  const[yvalue, ysetValue] = useState(""); 
   const [post, setPost] = React.useState(null);
   const [showText, setShowText] = useState(false);
   
-  const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"+&apikey=583d761d";
+  const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"&y="+ yvalue +"+&apikey=583d761d";
   const url="https://goplayer.top/watch/API/";
   const home = () => {  
     axios.get(baseURL).then((response) => {
@@ -31,7 +32,8 @@ function Search() {
     <h5>Find Movies, TV shows and more</h5>  
     </div>  
     <div className="imageone">
-    <input value={value} onChange={(e) => {setValue(e.target.value)}} />
+    <input value={value} onChange={(e) => {setValue(e.target.value)}} placeholder="Movie"/>
+    <input value={yvalue} onChange={(e) => {ysetValue(e.target.value)}} placeholder="year"/>
     <button type="submit" className="btn" onClick={home}>Search</button>  
     </div>
     <div><h1>{value}</h1></div>

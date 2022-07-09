@@ -6,7 +6,7 @@
 }
 .centerem .imageone{
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     gap: 0.5rem;
     margin: auto;
 }
@@ -69,8 +69,8 @@ box-sizing: border-box;
 }
 .displayten iframe{
     border: 0px none; 
-    margin-left: -185px;
+    margin-left: -120px;
      height: 659px;
-      margin-top: 500px; 
+      margin-top: 50px; 
       width: 926px;   
 }

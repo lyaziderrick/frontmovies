@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    color: black;
+}
+.vap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.1rem;
+    width: 70%;
+    margin: auto;
+}
+.bla{
+    border: 1px solid black;
+    width: 79%;
+    display: block;
+    margin: auto;
+}
+.bla img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.bla h6{
+    text-align: center;
+    padding: 0%;
+}
+.bla .arrange_data{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    border: 1px solid black;
+}
