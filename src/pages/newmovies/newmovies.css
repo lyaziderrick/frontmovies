@@ -10,7 +10,6 @@ h1{
     margin: auto;
 }
 .bla{
-    border: 1px solid black;
     width: 79%;
     display: block;
     margin: auto;
@@ -19,16 +18,17 @@ h1{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
 }
 .bla h6{
     text-align: center;
-    padding: 0%;
+    margin-top: 0.5rem;
 }
-.bla .arrange_data{
+.bla .word{
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    border: 1px solid black;
+    width: 180px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
 }

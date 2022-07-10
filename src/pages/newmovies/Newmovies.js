@@ -16,14 +16,13 @@ React.useEffect(() => {
     });
   }, []);
   if (!post) return null;
-  for (let i = 0; i < 4; i++) {
-    myloop.push(
+  for (let c = 0; c < 4; c++) {
+    myloop.push( 
         <div className="bla"> 
-        <img src={url + post.results[i].poster_path} alt="img"/>  
-        <h6>{post.results[i].original_title}</h6> 
-        <div className="arrange_data">   
-        <h5>{post.results[i].release_date}</h5>
-        <h5>{post.results[i].vote_count}</h5>  
+        <img src={url + post.results[c].poster_path} alt="img"/>  
+        <div className="word">  
+        <h6>{post.results[c].original_title}  ({post.results[c].release_date})</h6>  
+        
       </div> 
       </div>
     );
@@ -31,11 +30,9 @@ React.useEffect(() => {
   for (let i = 4; i < 8; i++) {
     myloopone.push(
         <div className="bla"> 
-        <img src={url + post.results[i+4].poster_path} alt="img"/>  
-        <h6>{post.results[i+4].original_title}</h6> 
-        <div className="arrange_data">   
-        <h5>{post.results[i+4].release_date}</h5>
-        <h5>{post.results[i+4].vote_count}</h5>  
+        <img src={url + post.results[i].poster_path} alt="img"/>  
+        <div className="word">   
+        <h6>{post.results[i].original_title}  ({post.results[i].release_date})</h6> 
       </div> 
       </div>
     );
@@ -43,23 +40,19 @@ React.useEffect(() => {
   for (let i = 8; i < 12; i++) {
     mylooptwo.push(
         <div className="bla"> 
-        <img src={url + post.results[i+8].poster_path} alt="img"/>  
-        <h6>{post.results[i+8].original_title}</h6> 
-        <div className="arrange_data">   
-        <h5>{post.results[i+8].release_date}</h5>
-        <h5>{post.results[i+8].vote_count}</h5>  
-      </div> 
+        <img src={url + post.results[i+8].poster_path} alt="img"/>
+        <div className="word">  
+        <h6>{post.results[i+8].original_title}  ({post.results[i+8].release_date})</h6>  
+        </div>    
       </div>
     );
   }
   for (let i = 12; i < 16; i++) {
     myloopthree.push(
         <div className="bla"> 
-        <img src={url + post.results[i].poster_path} alt="img"/>  
-        <h6>{post.results[i].original_title}</h6> 
-        <div className="arrange_data">   
-        <h5>{post.results[i].release_date}</h5>
-        <h5>{post.results[i].vote_count}</h5>  
+        <img src={url + post.results[i].poster_path} alt="img"/>   
+        <div className="word">   
+        <h6>{post.results[i].original_title}  ({post.results[i].release_date})</h6> 
       </div> 
       </div>
     );
@@ -68,7 +61,7 @@ React.useEffect(() => {
  
     return(
         <div>
-     <h1>New Movies</h1>   
+     <h1>Coming Soon</h1>   
     <div className="vap">  
         <div>
         {myloop} 
