@@ -1,0 +1,25 @@
+.footone{
+    background-color: black;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 5px;
+    color: white;
+}
+.footone .one{
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .footone .one img{
+    width: 50%;
+  }

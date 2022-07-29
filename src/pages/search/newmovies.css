@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: black;
+}
+.vap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.1rem;
+    width: 70%;
+    margin: auto;
+}
+.bla{
+    width: 79%;
+    display: block;
+    margin: auto;
+}
+.bla img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.bla h6{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.bla .word{
+    text-align: center;
+    width: 180px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+}
+.bla:hover{
+    background-color: yellow;
+    cursor: pointer;
+}

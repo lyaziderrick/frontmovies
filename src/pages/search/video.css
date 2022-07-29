@@ -1,0 +1,14 @@
+.displaypan{
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 80%;
+}
+.displaypan iframe{
+    border: 0px none; 
+    display: block;
+    margin: auto; 
+    height: 480px;
+    width: 926px;  
+   
+}

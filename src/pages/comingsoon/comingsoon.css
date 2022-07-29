@@ -9,26 +9,29 @@ h1{
     width: 70%;
     margin: auto;
 }
-.bla{
+.bl{
     width: 79%;
     display: block;
     margin: auto;
 }
-.bla img{
+.bl img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
 }
-.bla h6{
+.bl h6{
     text-align: center;
     margin-top: 0.5rem;
 }
-.bla .word{
+.bl .word{
     text-align: center;
     width: 180px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
 
+}
+.bl:hover  {
+    background-color: yellow;
 }

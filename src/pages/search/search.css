@@ -21,6 +21,9 @@
   font-size: 16px;
  
 }
+.centerem .imageone button:hover{
+    background-color: yellow;
+}
 .centerem .imageone input{
 padding: 15px 32px; 
 width:100%;
@@ -59,18 +62,4 @@ box-sizing: border-box;
 .centerem .result h5{
     width: 50%;
     font-size: small;
-}
-.displayten{
-    display: block;
-    margin: auto;
-    height: 300px;
-    width: 50%;
-
-}
-.displayten iframe{
-    border: 0px none; 
-    margin-left: -120px;
-     height: 659px;
-      margin-top: 50px; 
-      width: 926px;   
 }

@@ -1,11 +1,16 @@
 import React from "react";
-import Newmovies from "./newmovies/Newmovies";
-import Search from "./search/search";
+import Video from "./search/video";
+import Comingsoon from "./comingsoon/comingsoon";
+import Newmovies from "./search/Newmovies";
+import Footer from "./footer/footer";
+import Adsense from "../components/adsense/adsense";
 const Home =() =>{
     return(
-      <div className="papa">
-        <Search/>
+      <div className="papa">   
         <Newmovies/>
+        <Adsense/>
+        <Comingsoon/>
+        <Footer/>
       </div>
     )
 }
