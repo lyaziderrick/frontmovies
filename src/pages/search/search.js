@@ -27,6 +27,10 @@ const Search = (props) => {
         axios.get(baseURL).then((response) => {
             setPost(response.data);
           }); 
+        }else{
+          axios.get(baseURL).then((response) => {
+            setPost(response.data);
+          });
         }
         if([props.messagex]  !== ""){ 
           axios.get(baseURLx).then((response) => {
