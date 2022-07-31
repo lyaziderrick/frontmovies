@@ -32,7 +32,7 @@ const Search = (props) => {
             setPost(response.data);
           });
         }
-        if([props.messagex]  !== ""){ 
+        if([props.messagex]  == ""){ 
           axios.get(baseURLx).then((response) => {
               setPost(response.data);
             });
