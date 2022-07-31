@@ -36,7 +36,7 @@ const Search = (props) => {
   React.useEffect(() => {
    home()
   }, []);
-  if (!post) return null;
+  if (!post) return post;
 
   return (
     <div className="centerem">
