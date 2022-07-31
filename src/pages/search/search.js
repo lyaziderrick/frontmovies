@@ -11,7 +11,11 @@ import Video from './video';
 
 
 const Search = (props) => {
-  
+  const[value, setValue] = useState(""); 
+  var CurrentYear = new Date().getFullYear()
+  const[yvalue, ysetValue] = useState(""); 
+  const [post, setPost] = React.useState(null);
+  const [showText, setShowText] = useState(false); 
   
 
   return (
