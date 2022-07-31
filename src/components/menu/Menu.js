@@ -10,12 +10,7 @@ function Menu(){
     </NavLink>
     <Bars/>
     <NavMenu>
-        <NavLink to="/Movies" activeStyle>
-          Movies
-        </NavLink>
-        <NavLink to="/Shows" activeStyle>
-          TV show
-        </NavLink>
+       
     </NavMenu>
     <NavBtn>
       <NavBtnLink to="/signin">Buy Site</NavBtnLink>
