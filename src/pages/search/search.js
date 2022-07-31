@@ -14,7 +14,7 @@ const Search = (props) => {
   const[value, setValue] = useState(""); 
   var CurrentYear = new Date().getFullYear()
   const[yvalue, ysetValue] = useState(""); 
-  const [post, setPost] = React.useState(null);
+  const [post, setPost] = React.useState("shoe");
   const [showText, setShowText] = useState(false); 
   const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"&y="+ yvalue +"+&apikey=583d761d";
   const baseURLx = "http://www.omdbapi.com/?t= "+props.messagex+"&y="+ CurrentYear + " +&apikey=583d761d";  
@@ -35,7 +35,7 @@ const Search = (props) => {
   React.useEffect(() => {
    home()
   }, []);
-  if (post) return "hello";
+  if (!post) return "hello";
   return (
     <div className="centerem">
     <div>
