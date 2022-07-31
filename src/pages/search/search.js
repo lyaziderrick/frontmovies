@@ -45,7 +45,7 @@ const Search = (props) => {
     <h5>Find Movies, TV shows and more</h5>  
     </div>  
     <div className="imageone">
-    <input value={value} onChange={(e) => {setValue(e.target.value)}} placeholder="Movie"/>
+    <input value={value} onChange={(e) => {setValue(e.target.value)}} placeholder="movie"/>
     <input value={yvalue} onChange={(e) => {ysetValue(e.target.value)}} placeholder="year"/>
     <button type="submit" className="btn" onClick={home}>Search</button>  
     </div>
