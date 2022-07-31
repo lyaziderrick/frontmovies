@@ -22,16 +22,17 @@ const Search = (props) => {
   
   const url="https://2embed.org/embed/";
   const home = () => {  
-    if([props.messagex]  !== ""){ 
-    axios.get(baseURLx).then((response) => {
-        setPost(response.data);
-      });
-    }
+   
       if(value  !== ""){ 
         axios.get(baseURL).then((response) => {
             setPost(response.data);
           }); 
         }
+        if([props.messagex]  !== ""){ 
+          axios.get(baseURLx).then((response) => {
+              setPost(response.data);
+            });
+          } 
   }
   React.useEffect(() => {
    home()
