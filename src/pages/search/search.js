@@ -20,8 +20,22 @@ const Search = (props) => {
   const baseURLx = "http://www.omdbapi.com/?t= "+props.messagex+"&y="+ CurrentYear + " +&apikey=583d761d";  
   
   const url="https://2embed.org/embed/";
-  
-
+  const home = () => { 
+    if([props.messagex]  !== ""){ 
+    axios.get(baseURLx).then((response) => {
+        setPost(response.data);
+      });
+    }
+      if(value  !== ""){ 
+        axios.get(baseURL).then((response) => {
+            setPost(response.data);
+          }); 
+        }
+  }
+  React.useEffect(() => {
+   home()
+  }, []);
+  if (!post) return null;
   return (
     <div className="centerem">
     <div>
