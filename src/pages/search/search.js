@@ -22,6 +22,7 @@ const Search = (props) => {
   
   const url="https://2embed.org/embed/";
   const home = () => { 
+    setPost("")
     if([props.messagex]  !== ""){ 
     axios.get(baseURLx).then((response) => {
         setPost(response.data);
@@ -37,7 +38,6 @@ const Search = (props) => {
    home()
   }, []);
   if (!post) return null;
-
   return (
     <div className="centerem">
     <div>
