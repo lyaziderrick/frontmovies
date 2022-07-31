@@ -17,7 +17,7 @@ const Search = (props) => {
   const[yvalue, ysetValue] = useState(""); 
   const [post, setPost] = React.useState("security");
   const [showText, setShowText] = useState(false);
-  const baseURL = "http://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"&y="+ yvalue +"+&apikey=583d761d";
+  const baseURL = "https://ldexmov.herokuapp.com/www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"&y="+ yvalue +"+&apikey=583d761d";
   const baseURLx = "http://www.omdbapi.com/?t= "+props.messagex+"&y="+ CurrentYear + " +&apikey=583d761d";  
   
   const url="https://2embed.org/embed/";
@@ -27,12 +27,9 @@ const Search = (props) => {
         axios.get(baseURL).then((response) => {
             setPost(response.data);
           }); 
-        }else{
-          axios.get(baseURL).then((response) => {
-            setPost(response.data);
-          });
+
         }
-        if([props.messagex]  == ""){ 
+        if([props.messagex]  !== ""){ 
           axios.get(baseURLx).then((response) => {
               setPost(response.data);
             });
