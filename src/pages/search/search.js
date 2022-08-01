@@ -19,7 +19,6 @@ const Search = (props) => {
   const [showText, setShowText] = useState(false);
   const baseURL = "https://www.omdbapi.com/?t= "+value.replace(/ /g,"+")+"&y="+ yvalue +"+&apikey=583d761d";
   const baseURLx = "http://www.omdbapi.com/?t= "+props.messagex+"&y="+ CurrentYear + " +&apikey=583d761d";  
-  
   const url="https://2embed.org/embed/";
   const home = () => {  
    
@@ -29,7 +28,7 @@ const Search = (props) => {
           }); 
 
         }
-        if([props.messagex]  !== ""){ 
+        if(props.messagex  !== ""){ 
           axios.get(baseURLx).then((response) => {
             setPost(response.data);
           });
