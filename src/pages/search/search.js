@@ -30,13 +30,9 @@ const Search = (props) => {
 
         }
         if([props.messagex]  !== ""){ 
-          fetch(baseURLx)
-           .then(response => {
-             return response.json()
-          })
-           .then(data => {
-         setPost(data)
-      })
+          axios.get(baseURLx).then((response) => {
+            setPost(response.data);
+          });
       } 
   }
   React.useEffect(() => {
