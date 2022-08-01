@@ -26,7 +26,12 @@ const Search = (props) => {
         setPost(response.data);
       });
   } 
-     
+      if(value  !== ""){ 
+        axios.get(baseURL).then((response) => {
+            setPost(response.data);
+          }); 
+        value=""
+        }
       
   }
   React.useEffect(() => {
