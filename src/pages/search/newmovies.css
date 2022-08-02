@@ -13,6 +13,7 @@ h1{
     width: 79%;
     display: block;
     margin: auto;
+    position: relative;   
 }
 .bla img{
     display: block;
