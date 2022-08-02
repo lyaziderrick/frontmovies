@@ -4,12 +4,6 @@ import Newmovies from "./Newmovies";
 import "./search.css"
 import Video from './video';
 
-
-
-
-
-
-
 const Search = (props) => {
   
   const[value, setValue] = useState(""); 
@@ -25,6 +19,7 @@ const Search = (props) => {
       axios.get(baseURLx).then((response) => {
         setPost(response.data);
       });
+      props.messagex=""
   } 
       if(value  !== ""){ 
         axios.get(baseURL).then((response) => {
