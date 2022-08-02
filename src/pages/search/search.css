@@ -28,6 +28,8 @@
 padding: 15px 32px; 
 width:100%;
 box-sizing: border-box;  
+font-family: 'Courier New', Courier, monospace;
+font-weight: 500;
 }
 
 .centerem .resulta{
@@ -41,7 +43,7 @@ box-sizing: border-box;
     display: grid;
     grid-template-rows:1fr 1fr ;
     gap: 0.5rem;
-    background-image: url("up.jpg");
+    background-image: url("ha.jpg");
     background-repeat: no-repeat;
     background-size: 1500px;
   
