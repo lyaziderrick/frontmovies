@@ -41,6 +41,10 @@ box-sizing: border-box;
     display: grid;
     grid-template-rows:1fr 1fr ;
     gap: 0.5rem;
+    background-image: url("up.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+  
 }
 .centerem .result{
     display: grid;
