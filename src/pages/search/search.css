@@ -28,8 +28,8 @@
 padding: 15px 32px; 
 width:100%;
 box-sizing: border-box;  
-
 }
+
 .centerem .resulta{
  display: grid;
  grid-template-rows: 1fr; 
