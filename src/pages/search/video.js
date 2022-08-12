@@ -12,8 +12,9 @@ scrolling="no"  allowfullscreen="allowfullscreen" frameborder="0">
 <Adsense
   client="ca-pub-5325051597778065"
   slot="7730047444"
-  style={{ width: 500, height: 300 }}
-  format=""
+  style={{ display: 'block' }}
+  layout="in-article"
+  format="fluid"
 />
 </div>
 )
