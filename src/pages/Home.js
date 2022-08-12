@@ -8,7 +8,7 @@ const Home =() =>{
     return(
       <div className="papa">   
         <Newmovies/>
-        <Adsense/>
+        <Adsense slot="7730047444"/>
         <Comingsoon/>
         <Footer/>
       </div>
