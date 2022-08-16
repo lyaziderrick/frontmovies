@@ -1,4 +1,5 @@
 import React, { Component  } from 'react'
+import "./adsense.css"
 class Adsense extends Component {
 
     componentDidMount() {
