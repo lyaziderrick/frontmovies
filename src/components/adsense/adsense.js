@@ -10,7 +10,6 @@ class Adsense extends Component {
                 <ins className='adsbygoogle'
                     style={{ display: 'block' }}
                     data-ad-client= 'ca-pub-5325051597778065'
-                    data-ad-slot={this.props.slot}
                     data-ad-format= 'auto'
                     data-full-width-responsive="true"
                 >
@@ -18,7 +17,4 @@ class Adsense extends Component {
         );
     }
 }
-
-
-
 export default Adsense
