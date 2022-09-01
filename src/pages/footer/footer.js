@@ -1,4 +1,4 @@
-import React from "react"
+import React ,{Button,Linking}from "react"
 import "./footer.css"
 import PAP from "./logo.png"
 function Footer(){
@@ -12,7 +12,7 @@ function Footer(){
          You can also Download full movies from LdexMovies and watch it later if you want </h9>
        </div>
        <div className="one">
-       <button>Contact Us</button>  
+      
        </div>
       </div>
     )

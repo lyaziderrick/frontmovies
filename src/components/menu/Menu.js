@@ -13,7 +13,7 @@ function Menu(){
        
     </NavMenu>
     <NavBtn>
-      <NavBtnLink to="/signin">Buy Site</NavBtnLink>
+    
     </NavBtn>
    </Nav>
    </>
