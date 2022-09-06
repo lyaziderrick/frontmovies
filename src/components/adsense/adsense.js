@@ -1,21 +1,33 @@
-import React, { Component  } from 'react'
-import "./adsense.css"
-class Adsense extends Component {
-
-    componentDidMount() {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-    }
-
-    render() {
-        return (
-                <ins className='adsbygoogle'
-                    style={{ display: 'block' }}
-                    data-ad-client= 'ca-pub-5325051597778065'
-                    data-ad-format= 'auto'
-                    data-full-width-responsive="true"
-                >
-                </ins>
-        );
-    }
+import React, { useEffect, useRef } from 'react'
+export default function Adsense(){
+const banner = useRef<HTMLDivElement>('')
+const atOptions = {
+        key: '0e9ed3eef5346b35f6749a32bb5a8340',
+        format: 'iframe',
+        height: 50,
+        width: 520,
+        params: {},
 }
-export default Adsense
+    useEffect(() => {
+        if (!banner.current.Child) {
+        const conf = document.createElement('script')
+        const script = document.createElement('script')    
+        script.type = 'text/javascript'
+        script.src = '//pl17662934.profitablegatetocontent.com/${atOptions.key}/invoke.js'
+        conf.innerHTML = 'atOptions = ${JSON.stringify(atOptions)}'
+
+        if (banner.current) {
+            banner.current.append(conf)
+            banner.current.append(script)
+        }
+       
+
+       
+    }
+}, [])
+return(
+    <div ref={banner}></div>
+   
+)
+    
+}

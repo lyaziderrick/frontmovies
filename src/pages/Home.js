@@ -3,12 +3,13 @@ import Video from "./search/video";
 import Comingsoon from "./comingsoon/comingsoon";
 import Newmovies from "./search/Newmovies";
 import Footer from "./footer/footer";
-import Adsense from "../components/adsense/adsense";
+import Banner from "../components/adsense/adsense";
+import { Adsense } from "@ctrl/react-adsense";
 const Home =() =>{
     return(
       <div className="papa">   
         <Newmovies/>
-        <Adsense slot="7730047444"/>
+        <Adsense/>
         <Comingsoon/>
         <Footer/>
       </div>
