@@ -4,12 +4,12 @@ import Comingsoon from "./comingsoon/comingsoon";
 import Newmovies from "./search/Newmovies";
 import Footer from "./footer/footer";
 import Banner from "../components/adsense/adsense";
-import { Adsense } from "@ctrl/react-adsense";
+import Adzterra from "../components/adsense/adsense";
 const Home =() =>{
     return(
       <div className="papa">  
         <Newmovies/>
-        <Adsense/> 
+        <Adzterra/> 
         <Comingsoon/> 
         <Footer/>
       </div>

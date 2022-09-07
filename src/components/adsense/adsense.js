@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import "./adsense.css"
-export default function Adsense(){
+export default function Adzterra(){
 const banner = useRef<HTMLDivElement>(null)
 const atOptions = {
-        key: '0e9ed3eef5346b35f6749a32bb5a8340',
+        key: '9091cd7be08106d4a0509ea9a0b163cb',
         format: 'iframe',
         height: 50,
         width: 520,
@@ -14,9 +14,7 @@ const atOptions = {
         const conf = document.createElement('script')
         const script = document.createElement('script')    
         script.type = 'text/javascript'
-        script.src = `//pl17662934.profitablegatetocontent.com/${atOptions.key}/invoke.js 
-        <div id="container-0e9ed3eef5346b35f6749a32bb5a8340"></div>
-        `
+        script.src = `//pl17662934.profitablegatetocontent.com/${atOptions.key}/invoke.js`
         conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`
         if (banner.current) {
             banner.current.append(conf)
@@ -24,6 +22,9 @@ const atOptions = {
         } 
     }
 }, [])
-return <div ref={banner}></div>
+return <div>
+    {banner}
+    <div id="container-9091cd7be08106d4a0509ea9a0b163cb"></div>
+    </div>
     
 }
