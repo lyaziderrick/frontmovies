@@ -7,10 +7,10 @@ import Banner from "../components/adsense/adsense";
 import { Adsense } from "@ctrl/react-adsense";
 const Home =() =>{
     return(
-      <div className="papa">   
+      <div className="papa">     
         <Newmovies/>
-        <Adsense/>
         <Comingsoon/>
+        <Adsense/>
         <Footer/>
       </div>
     )

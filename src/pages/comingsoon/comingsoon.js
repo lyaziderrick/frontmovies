@@ -1,6 +1,7 @@
 import React ,{useRef}from "react";
 import "./comingsoon.css"
 import axios from "axios"
+
 var myloop = [];
 var myloopone = [];
 var mylooptwo = [];
@@ -60,10 +61,8 @@ React.useEffect(() => {
       </div>
     );
   }
-  
- 
     return(
-        <div>
+        <div>   
      <h1>Coming Soon</h1>  
      if({isLoading == true}){  
     <div className="vap">  
