@@ -8,8 +8,8 @@ import { Adsense } from "@ctrl/react-adsense";
 const Home =() =>{
     return(
       <div className="papa">  
-        <Adsense/> 
         <Newmovies/>
+        <Adsense/> 
         <Comingsoon/> 
         <Footer/>
       </div>
