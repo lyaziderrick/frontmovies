@@ -3,13 +3,12 @@ import Video from "./search/video";
 import Comingsoon from "./comingsoon/comingsoon";
 import Newmovies from "./search/Newmovies";
 import Footer from "./footer/footer";
-import Banner from "../components/adsense/adsense";
-import Adzterra from "../components/adsense/adsense";
+import GetAll from "../components/adsense/get";
 const Home =() =>{
     return(
       <div className="papa">  
         <Newmovies/>
-        <Adzterra/> 
+        <GetAll/>
         <Comingsoon/> 
         <Footer/>
       </div>
