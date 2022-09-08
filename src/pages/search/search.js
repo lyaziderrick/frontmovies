@@ -37,7 +37,7 @@ const Search = (props) => {
     <div className="centerem">
     <div>
     <h1>LdexMovies</h1> 
-    <h5>Find Movies, TV shows and more</h5>  
+    <h5>Find Movies</h5>  
     </div>  
     <div className="imageone">
     <input value={value} onChange={(e) => {setValue(e.target.value)}} placeholder="movie"/>
